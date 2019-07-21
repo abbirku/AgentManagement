@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AgentManagement.Core.DBContext
+namespace AgentManagement.Common.DBContext
 {
     public class EFDBContext : DbContext
     {
