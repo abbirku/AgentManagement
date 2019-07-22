@@ -52,5 +52,19 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AgentManagement.Common\AgentManagement.Common.csproj">
+      <Project>{2f74cddf-e36f-4be4-bfee-c9a651bfca6d}</Project>
+      <Name>AgentManagement.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AgentManagement.Core\AgentManagement.Core.csproj">
+      <Project>{390749dc-b2b5-4103-a046-117bc6b916b6}</Project>
+      <Name>AgentManagement.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AgentManagement.Infrastructure\AgentManagement.Infrastructure.csproj">
+      <Project>{a37384b8-5cc0-4031-aede-e30aa694bf48}</Project>
+      <Name>AgentManagement.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

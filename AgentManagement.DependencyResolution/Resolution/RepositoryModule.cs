@@ -1,4 +1,6 @@
-﻿using Ninject.Modules;
+﻿using AgentManagement.Core.Repositories;
+using AgentManagement.Infrastructure.Repositories;
+using Ninject.Modules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +13,7 @@ namespace AgentManagement.DependencyResolution.Resolution
     {
         public override void Load()
         {
-
+            Bind<IBusinessEntitiesRepository>().To<BusinessEntitiesRepository>();
         }
     }
 }

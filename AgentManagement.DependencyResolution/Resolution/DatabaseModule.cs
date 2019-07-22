@@ -1,4 +1,5 @@
-﻿using Ninject.Modules;
+﻿using AgentManagement.Common.DBContext;
+using Ninject.Modules;
 using System;
 using System.Collections.Generic;
 using System.Linq;
