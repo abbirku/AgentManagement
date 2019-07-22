@@ -13,5 +13,20 @@ namespace AgentManagement.WebApp.Controllers
         {
             return View();
         }
+
+        public ActionResult AgentList()
+        {
+            return View();
+        }
+
+        public ActionResult AgentAdd()
+        {
+            return View();
+        }
+
+        public ActionResult AgentEdit()
+        {
+            return View();
+        }
     }
 }

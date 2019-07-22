@@ -162,6 +162,10 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angular\app.js" />
+    <Content Include="Scripts\angular\controllers\AgentController.js" />
+    <Content Include="Scripts\angular\services\BasedApiUrlService.js" />
+    <Content Include="Scripts\angular\services\CRUDService.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\errors.json" />
@@ -927,6 +931,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\sitemap.xml" />
+    <Content Include="Scripts\toastr\angular-toastr.js" />
+    <Content Include="Scripts\toastr\angular-toastr.tpls.js" />
+    <Content Include="Scripts\toastr\toastr.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -943,10 +950,14 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Agent\Index.cshtml" />
     <Content Include="Scripts\version.json" />
+    <Content Include="Views\Agent\AgentList.cshtml" />
+    <Content Include="Views\Agent\AgentAdd.cshtml" />
+    <Content Include="Views\Agent\AgentEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\angular\directives\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
