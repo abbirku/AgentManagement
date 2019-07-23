@@ -1,4 +1,11 @@
-﻿app.controller('AgentListController', function ($scope) {
+﻿app.controller('AgentListController', function ($scope, $location) {
+    $scope.GotoAdd = function () {
+        $location.path('/add');
+    };
+
+    $scope.GotoEdit = function () {
+        $location.path('/edit');
+    };
     console.log('Inside AgentListController');
 });
 

@@ -1,21 +1,22 @@
 ﻿var app = angular.module('app', ['ngRoute', 'toastr']);
 
-app.config(function ($routeProvider) {
+app.config(function ($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
     $routeProvider
-        .when('/agentlist', {
+        .when('/list', {
             templateUrl: '/Agent/AgentList',
             controller: 'AgentListController'
         })
-        .when('/agentadd', {
+        .when('/add', {
             templateUrl: '/Agent/AgentAdd',
             controller: 'AgentAddController'
         })
-        .when('/agentedit', {
+        .when('/edit', {
             templateUrl: '/Agent/AgentEdit',
             controller: 'AgentEditController'
         })
         .otherwise({
-            redirectTo: '/agentlist'
+            redirectTo: '/list'
         });
 });
 
