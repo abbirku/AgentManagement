@@ -2,26 +2,28 @@
 
 ## Requirement
 
-Download .Net core 2.1 SDK
+Download .Net framework 4.5 SDK
+Must have MVC 5 & Web Api 2
 Visual Studio 2017
 
 ## For up and Running project
 
-If requirement is filled then update database from package manager console
-
-```PM> update-database```
-after migrating hit `F5`
-
 # Folder Description
+
+AgentManagement.Api: Containes all the api.
+AgentManagement.Common: Containes DbContext information.
+AgentManagement.DependencyResolution: Manage the resolution of dependencies.
+AgentManagement.Core: Containes entities and Interfaces definitions
+AgentManagement.Infrastructure: Containes Interfaces implementation
+AgentManagement.WebApp: Contains front-end ui structure with functionality
 
 ### Models
 
-Contain all entity
+BusinessEntities
 
 ### Persistence
 
-Contain Database connection info and Seed Data
-Database Initilized at StartUp class
+Add connection string in web.config of Api project and in common project App.Config
 
 ### Service
 
@@ -33,10 +35,10 @@ Contain Helper, mapper configuration and Viewmodels
 ![GitHub Logo](/images/agentlist.PNG)
 
 ## Add
-![GitHub Logo](/images/add-agent.PNG)
+![GitHub Logo](/images/agent-add.PNG)
 
 ## Edit
-![GitHub Logo](/images/edit.PNG)
+![GitHub Logo](/images/agent-edit.PNG)
 
 ## Delete
-![GitHub Logo](/images/delete.PNG)
+![GitHub Logo](/images/agent-delete.PNG)
