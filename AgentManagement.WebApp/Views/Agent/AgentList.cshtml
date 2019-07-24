@@ -1,61 +1,72 @@
 ﻿@{
     Layout = null;
 }
+<div class="row">
+    <div class="col-md-4">
+        <button ng-click="LinkToAdd()" class="btn btn-mini btn-success pull-left">Add Agent</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-hover no-more-tables">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th class="text-uppercase">Code</th>
+                    <th class="text-uppercase">Name</th>
+                    <th class="text-uppercase">City</th>
+                    <th class="text-uppercase">State</th>
+                    <th class="text-uppercase">Country</th>
+                    <th class="text-uppercase">Mobile</th>
+                    <th class="text-uppercase">Actions</th>
+                </tr>
+            </thead>
+            <tbody ng-show="agentList.length > 0">
+                <tr ng-repeat="row in agentList">
+                    <td class="v-align-middle">{{$index + 1}}</td>
+                    <td class="v-align-middle">{{row.Code}}</td>
+                    <td class="v-align-middle">{{row.Name}}</td>
+                    <td class="v-align-middle">{{row.City}}</td>
+                    <td class="v-align-middle">{{row.State}}</td>
+                    <td class="v-align-middle">{{row.Country}}</td>
+                    <td class="v-align-middle">{{row.Mobile}}</td>
+                    <td class="v-align-middle">
+                        <a class="btn btn-mini btn-primary" 
+                           ng-click="LinkToEdit(row.BusinessId)">Edit</a>
+                        <a class="btn btn-mini btn-danger"
+                           ng-click="SelectedObjId(row.BusinessId)"
+                           href="#ModalDelete"
+                           data-toggle="modal">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody ng-show="agentList.length == 0">
+                <tr class="text-center">
+                    <td colspan="7">No data available in table</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
-<div class="grid-body ">
-    <table class="table" id="example3">
-        <thead>
-            <tr>
-                <th>Rendering engine</th>
-                <th>Browser</th>
-                <th>Platform(s)</th>
-                <th>Engine version</th>
-                <th>CSS grade</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="odd gradeX">
-                <td>Trident</td>
-                <td>Internet Explorer 4.0</td>
-                <td>Win 95+</td>
-                <td class="center"> 4</td>
-                <td class="center">X</td>
-            </tr>
-            <tr class="even gradeC">
-                <td>Trident</td>
-                <td>Internet Explorer 5.0</td>
-                <td>Win 95+</td>
-                <td class="center">5</td>
-                <td class="center">C</td>
-            </tr>
-            <tr class="odd gradeA">
-                <td>Trident</td>
-                <td>Internet Explorer 5.5</td>
-                <td>Win 95+</td>
-                <td class="center">5.5</td>
-                <td class="center">A</td>
-            </tr>
-            <tr class="even gradeA">
-                <td>Trident</td>
-                <td>Internet Explorer 6</td>
-                <td>Win 98+</td>
-                <td class="center">6</td>
-                <td class="center">A</td>
-            </tr>
-            <tr class="odd gradeA">
-                <td>Trident</td>
-                <td>Internet Explorer 7</td>
-                <td>Win XP SP2+</td>
-                <td class="center">7</td>
-                <td class="center">A</td>
-            </tr>
-            <tr class="even gradeA">
-                <td>Trident</td>
-                <td>AOL browser (AOL desktop)</td>
-                <td>Win XP</td>
-                <td class="center">6</td>
-                <td class="center">A</td>
-            </tr>
-        </tbody>
-    </table>
+<!-- Modal HTML -->
+<div id="ModalDelete" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="icon-box">
+                    <i class="material-icons">&#xE5CD;</i>
+                </div>
+                <h4 class="modal-title">Are you sure?</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Do you really want to delete these records? This process cannot be undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" ng-click="Delete()">Delete</button>
+            </div>
+        </div>
+    </div>
 </div>

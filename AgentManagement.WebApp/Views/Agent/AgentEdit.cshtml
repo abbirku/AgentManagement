@@ -2,4 +2,214 @@
     Layout = null;
 }
 
-<h1>Inside Agent Edit view</h1>
+<div class="row">
+    <div class="col-md-8">
+        <h1 class="text-uppercase bold">Agent Edit Page</h1>
+    </div>
+    <div class="col-md-4">
+        <button class="btn btn-mini btn-success pull-right" ng-click="BackToList()">Back to list</button>
+    </div>
+</div>
+<div class="row">
+    <form role="form">
+        <div class="col-md-6">
+            <!--Code-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Code</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.Code" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--Email-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Email</label>
+                <div class="col-md-8 controls">
+                    <input type="email" ng-model="agent.Email" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--Name-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Name</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.Name" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--Street-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Street</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.Street" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--City-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">City</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.City" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--State-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">State</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.State" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--Zip-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Zip</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.Zip" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--Country-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Country</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.Country" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--Mobile-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Mobile</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.Mobile" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--Phone-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Phone</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.Phone" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--ContactPerson-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Contact Person</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.ContactPerson" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--ReferredBy-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Referred By</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.ReferredBy" class="col-md-10 form-control">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!--Logo-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Logo</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.Logo" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--Status-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Status</label>
+                <div class="col-md-9">
+                    <div class="radio radio-primary">
+                        <input id="New" type="radio" name="State" value="1" ng-model="agent.Status">
+                        <label for="New">New</label>
+                        <input id="Active" type="radio" name="State" value="2" ng-model="agent.Status">
+                        <label for="Active">Active</label>
+                        <input id="InActive" type="radio" name="State" value="3" ng-model="agent.Status">
+                        <label for="InActive">InActive</label>
+                        <input id="Locker" type="radio" name="State" value="4" ng-model="agent.Status">
+                        <label for="Locker">Locker</label>
+                    </div>
+                </div>
+            </div>
+            <!--Balance-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Balance</label>
+                <div class="col-md-8 controls">
+                    <input type="text" decimal-number ng-model="agent.Balance" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--LoginUrl-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Login Url</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.LoginUrl" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--SecurityCode-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Security Code</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.SecurityCode" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--SMTPServer-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">SMTPServer</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.SMTPServer" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--SMTPPort-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">SMTP Port</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.SMTPPort" numbers-only class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--SMTPUsername-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">SMTP Username</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.SMTPUsername" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--SMTPPassword-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">SMTP Password</label>
+                <div class="col-md-8 controls">
+                    <input type="text" ng-model="agent.SMTPPassword" class="col-md-10 form-control">
+                </div>
+            </div>
+            <!--Deleted-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Deleted</label>
+                <div class="col-md-8">
+                    @*<input type="checkbox" ng-model="agent.Deleted">*@
+                    <label class="container">
+                        <input type="checkbox" ng-model="agent.Deleted">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <!--CreatedOnUtc-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Created On Utc</label>
+                <div class="date-picker input-append success date col-md-10 col-lg-6 no-padding">
+                    <input type="date" ng-model="agent.CreatedOnUtc" class="form-control">
+                    <span class="add-on"><span class="arrow"></span><i class="fa fa-th"></i></span>
+                </div>
+            </div>
+            <!--UpdatedOnUtc-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Updated On Utc</label>
+                <div class="date-picker input-append success date col-md-10 col-lg-6 no-padding">
+                    <input type="date" ng-model="agent.UpdatedOnUtc" class="form-control">
+                    <span class="add-on"><span class="arrow"></span><i class="fa fa-th"></i></span>
+                </div>
+            </div>
+            <!--CurrentBalance-->
+            <div class="row custom-padding">
+                <label class="form-label col-md-3">Current Balance</label>
+                <div class="col-md-8 controls">
+                    <input type="text" decimal-number ng-model="agent.CurrentBalance" class="col-md-10 form-control">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="row">
+    <div class="col-md-offset-8 col-md-3">
+        <button class="btn btn-sm btn-success pull-right" ng-click="Update()" style="border-radius: 0px;">Update</button>
+    </div>
+</div>

@@ -11,7 +11,7 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: '/Agent/AgentAdd',
             controller: 'AgentAddController'
         })
-        .when('/edit', {
+        .when('/edit/:id', {
             templateUrl: '/Agent/AgentEdit',
             controller: 'AgentEditController'
         })

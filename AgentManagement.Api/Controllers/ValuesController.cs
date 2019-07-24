@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AgentManagement.Common.DBContext;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,6 +10,13 @@ namespace AgentManagement.Api.Controllers
 {
     public class ValuesController : ApiController
     {
+        private readonly EFDBContext context;
+
+        public ValuesController(EFDBContext context)
+        {
+            this.context = context;
+        }
+
         // GET api/values
         public IEnumerable<string> Get()
         {

@@ -36,7 +36,7 @@ namespace AgentManagement.Api.Controllers
         }
 
         [HttpGet]
-        [Route("GetBy/{id}")]
+        [Route("GetAll")]
         public IHttpActionResult GetAll()
         {
             try
@@ -59,7 +59,7 @@ namespace AgentManagement.Api.Controllers
             {
                 var result = businessEntitiesRepository.Insert(model);
 
-                return Ok(new { success = true, data = result });
+                return Ok(new { success = true, data = result, successMessage = "Insert Successful" });
             }
             catch (Exception ex)
             {
@@ -75,7 +75,7 @@ namespace AgentManagement.Api.Controllers
             {
                 var result = businessEntitiesRepository.Update(model);
 
-                return Ok(new { success = true, data = result });
+                return Ok(new { success = true, data = result, successMessage = "Update Successful" });
             }
             catch (Exception ex)
             {
@@ -91,13 +91,12 @@ namespace AgentManagement.Api.Controllers
             {
                 var result = businessEntitiesRepository.Delete(id);
 
-                return Ok(new { success = true, data = result });
+                return Ok(new { success = true, data = result, successMessage = "Delete Successful" });
             }
             catch (Exception ex)
             {
                 return Ok(new { success = true, errorMessage = ex.GetBaseException() });
             }
         }
-
     }
 }

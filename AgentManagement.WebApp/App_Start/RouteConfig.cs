@@ -15,7 +15,7 @@ namespace AgentManagement.WebApp
 
             routes.MapRoute(
                 name: "route1",
-                url: "{controller}/{action}/{page1}",
+                url: "{controller}/{action}/{page1}/{id}",
                 defaults: new { controller = "Agent", action = "Index" }
             );
 
