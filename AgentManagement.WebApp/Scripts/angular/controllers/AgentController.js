@@ -15,7 +15,7 @@
     };
     $scope.Init();
 
-    $scope.SelectedObjId = function (id) {
+    $scope.SelectedObjById = function (id) {
         $scope.SelectedObjId = id;
     };
 

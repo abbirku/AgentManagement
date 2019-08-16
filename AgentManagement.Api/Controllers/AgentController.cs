@@ -31,7 +31,9 @@ namespace AgentManagement.Api.Controllers
             }
             catch (Exception ex)
             {
-                return Ok(new { success = true, errorMessage = ex.GetBaseException() });
+                string message = ex.Message;
+                //return Ok(new { success = true, errorMessage = ex.GetBaseException() });
+                return Content(HttpStatusCode.NotFound, message);
             }
         }
 
