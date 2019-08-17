@@ -32,13 +32,13 @@ Contain Helper, mapper configuration and Viewmodels
 # Demo Images
 
 ## Agent List
-![GitHub Logo](images/agentlist.PNG)
+![GitHub Logo](https://github.com/abbirku/AgentManagement/blob/master/images/agentlist.png)
 
 ## Add
-![GitHub Logo](images/agent-add.PNG)
+![GitHub Logo](https://github.com/abbirku/AgentManagement/blob/master/images/agent-add.png)
 
 ## Edit
-![GitHub Logo](images/agent-edit.PNG)
+![GitHub Logo](https://github.com/abbirku/AgentManagement/blob/master/images/agent-edit.png)
 
 ## Delete
-![GitHub Logo](images/agent-delete.PNG)
+![GitHub Logo](https://github.com/abbirku/AgentManagement/blob/master/images/agent-delete.png)
