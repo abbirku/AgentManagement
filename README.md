@@ -32,13 +32,13 @@ Contain Helper, mapper configuration and Viewmodels
 # Demo Images
 
 ## Agent List
-![GitHub Logo](/images/agentlist.PNG)
+![GitHub Logo](images/agentlist.PNG)
 
 ## Add
-![GitHub Logo](/images/agent-add.PNG)
+![GitHub Logo](images/agent-add.PNG)
 
 ## Edit
-![GitHub Logo](/images/agent-edit.PNG)
+![GitHub Logo](images/agent-edit.PNG)
 
 ## Delete
-![GitHub Logo](/images/agent-delete.PNG)
+![GitHub Logo](images/agent-delete.PNG)
